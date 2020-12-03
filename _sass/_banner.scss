@@ -1,0 +1,61 @@
+.banner_container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.logo {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  height: 200px;
+}
+
+.title_container {
+  padding: 0 15px 40px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  flex: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline;
+}
+
+.title > p {
+  display: inline;
+  font-size: 7vw;
+}
+
+.slogan {
+  flex: 1;
+  text-align: center;
+}
+
+.slogan > p {
+  display: inline;
+}
+
+@media screen and (min-width: 601px) {
+  .title {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner_container {
+    flex-direction: column;
+  }
+  .title_container {
+    padding: 0 15px 0px 15px;
+  }
+}

@@ -1,0 +1,41 @@
+<aside>
+  <div class="vgchfgccontainer">
+    <nav>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="{{ site.baseurl }}">{{ site.title }}</a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+	  <span></span>
+	  <span></span>
+	</label>
+      </div>
+      <div class="nav-links">
+{% for page in site.pages %} {% if page.title %}
+<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+{% endif %} {% endfor %}
+<a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a>
+      </div>
+    </nav>
+  </div>
+</aside>
+
+<header>
+  <div class="banner_container">
+    <div class="logo">
+      <img src="/assets/pfp_logo_black.png" alt="Police Free Penn Logo">
+    </div>
+    <div class="title_container">
+      <div class="title">
+	<p>{{ site.title }}</p>
+      </div>
+      <div class="slogan">
+        <p>{{ site.slogan }}</p>
+      </div>
+    </div>
+  </div>
+</header>

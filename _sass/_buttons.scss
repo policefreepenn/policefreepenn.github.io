@@ -1,0 +1,58 @@
+.wp-buttons {
+  background: #2B2B2B;
+  display: flex;
+  justify-content: center;
+}
+
+.ct-buttons {
+  max-width: $content-width;
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.action-button {
+  flex: 1;
+  background: transparent;
+  border: 2px solid #979797;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  top: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 18px;
+  padding: 15px 25px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  white-space: nowrap;
+}
+
+.action-button > a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.action-button:hover {
+  background-color: #A3FFAC;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
+}

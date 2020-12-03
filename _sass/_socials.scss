@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+  background: #A3FFAC;
+  flex-direction: row;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.social-button {
+  padding: 15px 25px;
+  webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.social-button:hover {
+  filter: invert(13%) sepia(7%) saturate(9%) hue-rotate(314deg) brightness(103%) contrast(91%);
+}
+
+.social-button > a > img {
+  height: 48px;
+}
